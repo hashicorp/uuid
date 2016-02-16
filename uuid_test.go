@@ -20,3 +20,9 @@ func TestGenerateUUID(t *testing.T) {
 		}
 	}
 }
+
+func BenchmarkGenerateUUID(b *testing.B) {
+	for n := 0; n < b.N; n++ {
+		_ = GenerateUUID()
+	}
+}
