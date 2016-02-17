@@ -1,4 +1,4 @@
-# uuid
+# uuid [![Build Status](https://travis-ci.org/hashicorp/uuid.svg?branch=master)](https://travis-ci.org/hashicorp/uuid)
 
 Generates UUID-format strings using purely high quality random bytes.
 
