@@ -10,6 +10,8 @@ go:
   - 1.5
   - 1.6
   - tip
-
+  
+exclude jobs:
+   go: "1.4"
 script:
   - go test -bench . -benchmem -v ./...
