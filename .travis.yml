@@ -11,7 +11,7 @@ go:
   - 1.6
   - tip
   
-exclude jobs:
-   go: "1.4"
+allow failures:
+  - go: "1.4"
 script:
   - go test -bench . -benchmem -v ./...
