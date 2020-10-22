@@ -12,7 +12,7 @@ go:
   - tip
   
 allow failures:
-  - go: 
-      - 1.4
+  - go: "1.4"
+        
 script:
   - go test -bench . -benchmem -v ./...
