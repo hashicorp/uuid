@@ -11,8 +11,11 @@ go:
   - 1.6
   - tip
   
-allow failures:
-  - go: "1.4"
+# Disable version in power system
+jobs: 
+  exclude:
+    - arch: ppc64le
+    - go: "1.4"  
         
 script:
   - go test -bench . -benchmem -v ./...
